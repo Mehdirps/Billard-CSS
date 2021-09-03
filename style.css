@@ -20,28 +20,38 @@ main {
 }
 
 @keyframes rouler {
-    from {
+    0% {
         bottom: 0;
         left: 0;
+        rotate:360deg;
     }
     
-    to {
+    50% {
         bottom: 540px;
         left: 1260px;
         z-index: 200;
     }
+    100%{
+        bottom: 0;
+        left: 0;
+    }
 }
 
 @keyframes roulerouge {
-    from {
+    0% {
         top: -135px;
         left: 5px;
+        rotate:360deg;
     }
 
-    to {
+    50% {
         top: 400px;
         left: 1250px;
         z-index: 200;
+    }
+    100%{
+        top: -135px;
+        left: 5px;
     }
 }
 
@@ -95,7 +105,7 @@ h1 {
     border: solid 1px;
     background-image: radial-gradient(farthest-corner at top right, rgb(0, 0, 0), white, rgb(255, 255, 255));
     animation: roulerouge 5s alternate infinite;
-    animation-delay: 7s;
+    animation-delay: 8s;
 }
 
 .rouge {
