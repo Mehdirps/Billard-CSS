@@ -10,28 +10,54 @@ main {
     border: solid 6px;
 }
 
+.queue {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 600px;
+    height: 30px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: radial-gradient(farthest-corner at right, brown,brown, black, black, black);
+    animation: coup 2s alternate infinite;
+}
+
 .noir {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    transform: translate(-50%, -50%);
+    left: 54.5%;
+    top: 48%;
+    width: 80px;
+    height: 80px;
     background-image: radial-gradient(farthest-corner at top right, white, black, black);
     border-radius: 50%;
     animation: rouler 5s alternate infinite;
 }
-
+/* @keyframes coup{
+    0%{
+        left: -50%;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: -50%;
+    }
+}
 @keyframes rouler {
     0% {
         bottom: 0;
         left: 0;
-        rotate:360deg;
+        rotate: 360deg;
     }
-    
+
     50% {
         bottom: 540px;
         left: 1260px;
         z-index: 200;
     }
-    100%{
+
+    100% {
         bottom: 0;
         left: 0;
     }
@@ -41,7 +67,7 @@ main {
     0% {
         top: -135px;
         left: 5px;
-        rotate:360deg;
+        rotate: 360deg;
     }
 
     50% {
@@ -49,16 +75,17 @@ main {
         left: 1250px;
         z-index: 200;
     }
-    100%{
+
+    100% {
         top: -135px;
         left: 5px;
     }
-}
+} */
 
 .blanc {
     background-color: white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -89,16 +116,16 @@ main {
 }
 
 h1 {
-    transform: rotate(-45deg);
+    /* transform: rotate(-45deg); */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #blanc {
     position: absolute;
-    top: -135px;
-    left: 5px;
-    width: 100px;
-    height: 100px;
+    top: 21.5%;
+    left: 42%;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-top: 10%;
     background-color: white;
@@ -110,10 +137,10 @@ h1 {
 
 .rouge {
     background-color: rgb(255, 0, 0);
-    width: 100px;
+    width: 80px;
     height: 40px;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 13px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -184,4 +211,51 @@ h1 {
 .bdroite {
     bottom: 0;
     right: 0;
+}
+#blanc1, #blanc3,#blanc4,#blanc5,#blanc6,#blanc7{
+    position: absolute;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    border-radius: 50%;
+}
+#blanc1{
+    top: 48%;
+    left: 42%;
+}
+.marron, .jaune,.violet,.bleu,.vert,.orange{
+    background-color: brown;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    border-radius: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quinze,.neuf,.neuf,.douze,.dix,.quatorze,.treize{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: .8rem;
+}
+#blanc3{
+    top: 41.5%;
+    left: 34.2%;
+}
+.jaune{
+    background-color: yellow;
+}
+#blanc4{
+    top: 54.5%;
+    left: 50%;
+}
+.violet{
+    background-color: purple;
+}
+#blanc4{
+    top: 30%;
+    
 }
